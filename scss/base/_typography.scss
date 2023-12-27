@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+@import "../base/reset";
+@import "../abstract/variables";
+
+@mixin nav-link {
+  font: {
+    size: 2.0rem;
+    weight: map-get($font-weights, regular);
+  }
+  color: $clr-neutral-primary-500;
+  line-height: 3.2rem;
+  &:hover {
+    text-decoration: underline;
+  }
+  cursor: pointer;
+}
+
+@mixin hero-para {
+  color: $clr-primary-500;
+  font: {
+    size: 2.0rem;
+    weight: map-get($font-weights, regular);
+  }
+  line-height: 3.2rem;
+}
+
+@mixin hero-heading {
+  color: $clr-primary-500;
+  line-height: 12rem;
+  text-align: center;
+  font: {
+    size: 8rem;
+    weight: map-get($font-weights, regular); 
+  }
+  span {
+    font: {
+      size: 12rem;
+      weight: map-get($font-weights, medium);
+      letter-spacing: 5px;
+      ;
+    }
+  }
+}
+
+@mixin hero-new-look {
+  color: $clr-neutral-0;
+  font: {
+    size: 2.3rem;
+    weight: map-get($font-weights, regular);
+  }
+  line-height: 3.6rem;
+  letter-spacing: 1%;
+}
+
+@mixin new-collection-heading-one {
+  color: $clr-neutral-200;
+  font: {
+    size: 5.6rem;
+    weight: map-get($font-weights, semi-bold);
+  }
+  line-height: 6.8rem;
+}
+
+@mixin new-collection-heading-three {
+  color: $clr-neutral-200;
+  font: {
+    size: 3.6rem;
+    weight: map-get($font-weights, medium);
+  }
+  line-height: 4.8rem;
+}
+
+@mixin season-heading-one {
+  color: $clr-neutral-primary-500;
+  font: {
+    size: 5.6rem;
+    weight: map-get($font-weights, semi-bold )
+  }
+  line-height: 6.8rem;
+}
+
+@mixin season-heading-three {
+  color: $clr-neutral-primary-500;
+  font: {
+    size: 3.6rem;
+    weight: map-get($font-weights, medium);
+  }
+  line-height: 4.8rem;
+}
+
+@mixin season-para {
+  color: $clr-neutral-primary-500;
+  font: {
+    size: 2.0rem;
+    weight: map-get($font-weights, regular);
+  }
+  line-height: 3.2rem;
+}
+
+@mixin cta-first-heading {
+  color: $clr-neutral-0;
+  font: {
+    size: 5.6rem;
+    weight: map-get($font-weights, semi-bold)
+  }
+}
+
+@mixin cta-second-heading {
+  color: $clr-neutral-0;
+  font: {
+    size: 5.6rem;
+    weight: map-get($font-weights, semi-bold)
+  }
+  text-decoration: underline;
+}
+
+@mixin footer-heading-6 {
+  color: $clr-neutral-1000;
+  font: {
+    size: 1.8rem;
+    weight: map-get($font-weights, semi-bold)
+  }
+  line-height: 3.2rem;
+}
+
+@mixin footer-link {
+  color: $clr-neutral-1000;
+  font: {
+    size: 1.8rem;
+    weight: map-get($font-weights, regular)
+  }
+  line-height: 3.2rem;
+  &:hover {
+    text-decoration: underline;
+  }
+  cursor: pointer;
+}
+
+@mixin footer-icon {
+  color: $clr-neutral-1000;
+  font-size: 2.4rem;
+  &:hover {
+    color: lighten($clr-neutral-1000, 15%);
+  }
+}
+
+@mixin footer-copyright {
+  color: $clr-neutral-1000;
+  font: {
+    size: 1.4rem;
+    weight: map-get($font-weights, regular)
+  }
+}

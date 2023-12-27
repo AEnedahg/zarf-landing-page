@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+@import  "./abstract/variables",
+"./base/normalize", "./base/reset", "./base/typography",
+"./components/button",
+"./layout/cta", "./layout/footer", "./layout/header", "./layout/hero", "./layout/new-collection",
+"./layout/season";
+
+body {
+  font-family: $ff-primary;
+}

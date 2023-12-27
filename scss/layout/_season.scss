@@ -1,0 +1,262 @@
+@import "../abstract/variables", "../base/normalize", "../base/reset", "../base/typography",
+"../components/button";
+
+.season {
+  margin: 120px 94px;
+  display: flex;
+  flex-direction: column;
+  gap: 52px;
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    &--left {
+      width: 48%;
+      &-heading-three {
+        @include season-heading-three;
+        text-transform: uppercase;
+      }
+      &-heading-one {
+        @include season-heading-one;
+        text-transform: uppercase;
+      }
+    }
+    &--right {
+      width: 48%;
+      &-para {
+        @include season-para;
+        width: 65%;
+      }
+    }
+  }
+  &__bottom {
+    display: flex;
+    justify-content: space-between;
+    &--left {
+      width: 48%;
+      position: relative;
+      &-image {
+        width: 100%;
+      }
+      &-btn {
+        @include shop-now-btn;
+        position: absolute;
+        bottom: 50px;
+        left: 40%;
+      }
+    }
+    &--right {
+      width: 48%;
+      position: relative;
+      &-image {
+        width:100%;
+      }
+      &-btn {
+        @include shop-now-btn;
+        position: absolute;
+        bottom: 50px;
+        left: 40%;
+      }
+    }
+  }
+}
+/* xs-phone */
+@media (min-width: 320px) and (max-width: 374px) {
+  .season {
+    margin: 50px 20px 50px 20px;
+  }
+  .season__top {
+    flex-direction: column;
+    &--left {
+      width: 100%;
+      &-heading-one {
+        font-size: 3.0rem;
+      }
+      &-heading-three {
+        font-size: 2.4rem;
+      }
+    }
+    &--right {
+      width: 100%;
+      &-para {
+        width: 100%;
+        font-size: 1.6rem;
+      }
+    }
+  }
+  .season__bottom {
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+    &--left, &--right {
+      width: 90%;
+    }
+  }
+  .season__bottom--left-btn,
+  .season__bottom--right-btn {
+    left: 30%;
+    bottom: 30px;
+  }
+}
+/* phone */
+@media (min-width: 375px) and (max-width: 474px) {
+  .season {
+    margin: 70px 30px 70px 30px;
+  }
+  .season__top {
+    flex-direction: column;
+    &--left {
+      width: 100%;
+      &-heading-one {
+        font-size: 3.0rem;
+      }
+      &-heading-three {
+        font-size: 2.4rem;
+      }
+    }
+    &--right {
+      width: 100%;
+      &-para {
+        width: 100%;
+        font-size: 1.6rem;
+      }
+    }
+  }
+  .season__bottom {
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+    &--left, &--right {
+      width: 90%;
+    }
+  }
+  .season__bottom--left-btn,
+  .season__bottom--right-btn {
+    left: 35%;
+    bottom: 30px;
+  }
+}
+/* xs */
+@media (min-width: 475px) and (max-width: 639px) {
+  .season {
+    margin: 150px 64px 150px 64px;
+  }
+  .season__top {
+    flex-direction: column;
+    &--left {
+      width: 100%;
+      &-heading-one {
+        font-size: 4rem;
+      }
+    }
+    &--right {
+      width: 100%;
+      &-para {
+        width: 100%;
+      }
+    }
+  }
+  .season__bottom {
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+    &--left, &--right {
+      width: 71%;
+    }
+  }
+  .season__bottom--left-btn,
+  .season__bottom--right-btn {
+    left: 32%;
+    bottom: 40px;
+  }
+}
+/* sm */
+@media (min-width: 640px) and (max-width: 767px) {
+  .season {
+    margin-top: 300px;
+  }
+  .season__top {
+    flex-direction: column;
+    &--left {
+      width: 100%;
+      &-heading-one {
+        font-size: 4.4rem;
+      }
+    }
+    &--right {
+      width: 100%;
+      &-para {
+        width: 100%;
+      }
+    }
+  }
+  .season__bottom {
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+    &--left, &--right {
+      width: 60%;
+    }
+  }
+  .season__bottom--left-btn,
+  .season__bottom--right-btn {
+    left: 32%;
+    bottom: 40px;
+  }
+}
+/* md */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .season {
+    margin-top: 300px;
+  }
+  .season__top {
+    flex-direction: column;
+    &--left {
+      width: 100%;
+      &-heading-one {
+        font-size: 4.4rem;
+      }
+    }
+    &--right {
+      width: 100%;
+      &-para {
+        width: 100%;
+      }
+    }
+  }
+  .season__bottom {
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+    &--left, &--right {
+      width: 60%;
+    }
+  }
+  .season__bottom--left-btn,
+  .season__bottom--right-btn {
+    left: 33%;
+    bottom: 40px;
+  }
+}
+/* lg */
+@media (min-width: 1024px) and (max-width: 1279px) {
+  .season__top--left-heading-one {
+    font-size: 4.4rem;
+  }
+  .season__top--right-para {
+    width: 80%;
+  }
+}
+/* xl */
+@media (min-width: 1280px) and (max-width: 1439px) {
+  .season__top--left-heading-one {
+    font-size: 4.4rem;
+  }
+}
+/* 2xl */
+@media (min-width:1440px) and (max-width: 1536px) {
+  
+}
+/* 3xl */
+@media (min-width: 1537px) {
+
+}

@@ -1,0 +1,106 @@
+@import "../abstract/variables", "../base/normalize", "../base/reset", "../base/typography",
+"../components/button";
+
+.cta {
+  width: 100%;
+  height: 897px;
+  background-image: url(https://res.cloudinary.com/dmrr92p4s/image/upload/v1703712566/zarf-landing-page/cta-background-image_dxkyd3.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: contain;
+  background-position: center center;
+  padding-top: 82px;
+  padding-left: 94px;
+  &__heading-1 {
+    @include cta-first-heading;
+    margin-bottom: 15px;
+  }
+  &__heading-2 {
+    @include cta-second-heading;
+    text-decoration: underline !important;
+    text-underline-offset: 20px;
+    &:hover {
+      color: darken($clr-neutral-0, 7%);
+    }
+  }
+}
+
+/* xs-phone */
+@media (min-width: 320px) and (max-width: 374px) {
+  .cta {
+    padding: 20px;
+    height: 400px;
+    &__heading-1 {
+      font-size: 2.3rem;
+    }
+    &__heading-2 {
+      font-size: 2.3rem;
+      text-underline-offset: 6px;
+    }
+  } 
+}
+/* phone */
+@media (min-width: 375px) and (max-width: 474px) {
+  .cta {
+    padding: 50px;
+    height: 400px;
+    &__heading-1 {
+      font-size: 3rem;
+    }
+    &__heading-2 {
+      font-size: 3rem;
+      text-underline-offset: 10px;
+    }
+  } 
+}
+/* xs */
+@media (min-width: 475px) and (max-width: 639px) {
+  .cta {
+    padding: 50px;
+    height: 500px;
+    &__heading-1 {
+      font-size: 4rem;
+    }
+    &__heading-2 {
+      font-size: 4rem;
+      text-underline-offset: 12px;
+    }
+  }
+}
+/* sm */
+@media (min-width: 640px) and (max-width: 767px) {
+  .cta {
+    padding: 50px;
+    height: 550px;
+    &__heading-1 {
+      font-size: 4.4rem;
+    }
+    &__heading-2 {
+      font-size: 4.4rem;
+    }
+  }
+}
+/* md */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .cta {
+    padding: 24px;
+  }
+}
+/* lg */
+@media (min-width: 1024px) and (max-width: 1279px) {
+  .cta {
+    padding: 80px;
+  }
+}
+/* xl */
+@media (min-width: 1280px) and (max-width: 1439px) {
+
+}
+/* 2xl */
+@media (min-width:1440px) and (max-width: 1536px) {
+  
+}
+/* 3xl */
+@media (min-width: 1537px) {
+
+}

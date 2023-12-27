@@ -1,0 +1,41 @@
+@import "../abstract/variables";
+
+@mixin header-login-btn {
+  width: 116px;
+  height: 48px;
+  color: $clr-neutral-0;
+  background-color: $clr-neutral-1000;
+  border:none;
+  outline:none;
+  cursor: pointer;
+  font-family: $ff-primary;
+  a {
+    color:inherit;
+    font: {
+      size: 2.0rem;
+      weight: map-get($font-weights, regular);
+      family: inherit;
+    }
+    line-height: 3.2rem;
+  }
+  &:hover {
+    background-color: lighten($clr-neutral-1000, 20%);
+  }
+}
+
+@mixin shop-now-btn {
+  width: 100px;
+  height: 50px;
+  color: $clr-neutral-1000;
+  background-color: $clr-neutral-0;
+  border:none;
+  outline: none;
+  font-family: $ff-primary;
+  a {
+    color:inherit;
+    font-family: inherit;
+  }
+  &:hover {
+    background-color: darken($clr-neutral-0, 7%);
+  }
+}
