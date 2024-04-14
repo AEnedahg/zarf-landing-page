@@ -6,3 +6,11 @@
 html {
   font-size: 10px;
 }
+body {
+  display: flex;
+  justify-content: center;
+}
+.container {
+  width: 100vw;
+  max-width: 1440px;
+}
